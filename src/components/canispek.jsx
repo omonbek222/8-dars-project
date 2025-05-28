@@ -1,0 +1,37 @@
+/*TypeScript nima?
+TypeScript — bu JavaScript’ning ustiga qurilgan,
+kuchli tip tizimiga ega dasturlash tili. U JS kabi ishlaydi,
+lekin xatoliklarni oldindan aniqlash, 
+kattaroq loyihalarni boshqarish uchun mo‘ljallangan.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+let age: number = 25;
+let name: string = "Ali";
+let isActive: boolean = true;
+
+number, string, boolean — bu TypeScript’ning asosiy tiplari. Har bir o‘zgaruvchining tipi ko‘rsatiladi.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let fruits: string[] = ["olma", "banan"];
+let numbers: number[] = [1, 2, 3];
+let user: [string, number] = ["Ali", 25]; // Tuple
+
+string[] bu — string elementlardan iborat massiv. Tuple esa qat’iy tartibda va turdagi elementlardan tashkil topgan massiv.
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let id: string | number;
+id = "123";
+id = 123;
+belgisi orqali o‘zgaruvchi bir nechta turga ega bo‘lishi mumkin.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function greet(name: string): string {
+  return `Salom, ${name}`;
+}
+Parametr va natijaning tipi oldindan ko‘rsatiladi. Bu xatoliklarni kamaytiradi.
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+type ID = string | number;
+
+let userId: ID = 101;
+kalit so‘zi orqali turli murakkab turlar uchun o‘z nomimizni berish mumkin.
